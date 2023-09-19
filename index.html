@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon-knight.ico" />
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <main>
+      <h1>Snake Game</h1>
+      <canvas
+        id="mainCanvas"
+        width="640"
+        height="640"
+        style="background-color: black"
+      ></canvas>
+      <p id="myScore">Score</p>
+      <p id="highestScore">Highest Score</p>
+      <button type="button" id="start" onclick="location.reload()">
+        Game Start
+      </button>
+      <div class="onoffswitch">
+        <input
+          type="checkbox"
+          name="onoffswitch"
+          class="onoffswitch-checkbox"
+          id="myonoffswitch"
+          tabindex="0"
+          checked
+        />
+        <label class="onoffswitch-label" for="myonoffswitch">
+          <span class="onoffswitch-inner"></span>
+          <span class="onoffswitch-switch"></span>
+        </label>
+      </div>
+      <div class="description">
+        <h2>Description</h2>
+        <br />
+        <p>
+          This is a simple web-based version of the Snake game. It's created
+          using JavaScript.
+          <br />
+          <br />
+          You can control the snake using the arrow keys on your keyboard or the
+          WASD keys.
+          <br />
+          There is a switch located below the "Game Start" button. You can use
+          this switch to select the game difficulty.
+          <br />
+          In the easy mode, the snake doesn't immediately die upon hitting the
+          wall; instead, it reappears from the opposite side of the wall.
+          <br />
+          Under the normal difficulty setting, just like typical Snake game, if
+          the snake's head hits the wall, game over.
+          <br />
+          Your highest score is recorded and stored in Local Storage.
+        </p>
+        <br />
+        <h3>Contact</h3>
+        <p>siechengye@gmail.com</p>
+      </div>
+    </main>
+  </body>
+  <script src="./app.js"></script>
+</html>

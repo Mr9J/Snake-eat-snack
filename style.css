@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: black;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main h1 {
+  margin: 1rem;
+  color: white;
+  font-size: 3rem;
+}
+body main #mainCanvas {
+  border: 5px solid white;
+}
+body main #myScore,
+body main #highestScore {
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+}
+body main #start {
+  padding: 1rem;
+  background-color: white;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+body main div.onoffswitch {
+  position: relative;
+  width: 90px;
+}
+body main div.onoffswitch .onoffswitch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+body main div.onoffswitch .onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid #999999;
+  border-radius: 20px;
+}
+body main div.onoffswitch .onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+body main div.onoffswitch .onoffswitch-inner:before,
+body main div.onoffswitch .onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  height: 30px;
+  padding: 0;
+  line-height: 30px;
+  font-size: 14px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+body main div.onoffswitch .onoffswitch-inner:before {
+  content: "Easy";
+  padding-left: 10px;
+  background-color: #000203;
+  color: #ffffff;
+}
+body main div.onoffswitch .onoffswitch-inner:after {
+  content: "Normal";
+  padding-right: 10px;
+  background-color: #ffffff;
+  color: #030303;
+  text-align: right;
+}
+body main div.onoffswitch .onoffswitch-switch {
+  display: block;
+  width: 18px;
+  margin: 6px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 56px;
+  border: 2px solid #999999;
+  border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+body main div.onoffswitch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+body main div.onoffswitch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+body main div.description {
+  max-width: 60%;
+  padding: 2rem;
+  margin-top: 2rem;
+  border: 3px solid white;
+}
+body main div.description h2 {
+  color: white;
+  font-size: 3rem;
+}
+body main div.description h2::-moz-selection {
+  background-color: white;
+  color: black;
+}
+body main div.description h2::selection {
+  background-color: white;
+  color: black;
+}
+body main div.description p {
+  color: white;
+  font-size: 2rem;
+}
+body main div.description p::-moz-selection {
+  background-color: white;
+  color: black;
+}
+body main div.description p::selection {
+  background-color: white;
+  color: black;
+}
+body main div.description h3 {
+  color: white;
+  font-size: 2.5rem;
+}
+body main div.description h3::-moz-selection {
+  background-color: white;
+  color: black;
+}
+body main div.description h3::selection {
+  background-color: white;
+  color: black;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  background-color: black;
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      margin: 1rem;
+      color: white;
+      font-size: 3rem;
+    }
+    #mainCanvas {
+      border: 5px solid white;
+      // position: absolute;
+      // top: 60%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+    }
+    #myScore,
+    #highestScore {
+      color: white;
+      font-size: 2rem;
+      padding: 10px;
+    }
+    #start {
+      padding: 1rem;
+      background-color: white;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    div.onoffswitch {
+      position: relative;
+      width: 90px;
+      .onoffswitch-checkbox {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+      }
+      .onoffswitch-label {
+        display: block;
+        overflow: hidden;
+        cursor: pointer;
+        border: 2px solid #999999;
+        border-radius: 20px;
+      }
+      .onoffswitch-inner {
+        display: block;
+        width: 200%;
+        margin-left: -100%;
+        transition: margin 0.3s ease-in 0s;
+      }
+      .onoffswitch-inner:before,
+      .onoffswitch-inner:after {
+        display: block;
+        float: left;
+        width: 50%;
+        height: 30px;
+        padding: 0;
+        line-height: 30px;
+        font-size: 14px;
+        color: white;
+        font-family: Trebuchet, Arial, sans-serif;
+        font-weight: bold;
+        box-sizing: border-box;
+      }
+      .onoffswitch-inner:before {
+        content: "Easy";
+        padding-left: 10px;
+        background-color: #000203;
+        color: #ffffff;
+      }
+      .onoffswitch-inner:after {
+        content: "Normal";
+        padding-right: 10px;
+        background-color: #ffffff;
+        color: #030303;
+        text-align: right;
+      }
+      .onoffswitch-switch {
+        display: block;
+        width: 18px;
+        margin: 6px;
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 56px;
+        border: 2px solid #999999;
+        border-radius: 20px;
+        transition: all 0.3s ease-in 0s;
+      }
+      .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+        margin-left: 0;
+      }
+      .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+        right: 0px;
+      }
+    }
+    div.description {
+      max-width: 60%;
+      padding: 2rem;
+      margin-top: 2rem;
+      border: 3px solid white;
+      h2 {
+        color: white;
+        font-size: 3rem;
+        &::selection {
+          background-color: white;
+          color: black;
+        }
+      }
+      p {
+        color: white;
+        font-size: 2rem;
+        &::selection {
+          background-color: white;
+          color: black;
+        }
+      }
+      h3 {
+        color: white;
+        font-size: 2.5rem;
+        &::selection {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}
