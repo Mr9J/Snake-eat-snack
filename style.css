@@ -6,6 +6,8 @@
 
 body {
   background-color: black;
+  position: relative;
+  overflow: hidden;
 }
 body main {
   display: flex;
@@ -100,45 +102,49 @@ body main div.onoffswitch .onoffswitch-checkbox:checked + .onoffswitch-label .on
 body main div.onoffswitch .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
   right: 0px;
 }
-body main div.description {
-  max-width: 60%;
+
+div.description {
+  position: fixed;
+  max-width: 30%;
   padding: 2rem;
-  margin-top: 2rem;
+  top: 10%;
+  margin: 1rem;
   border: 3px solid white;
+  z-index: -1;
 }
-body main div.description h2 {
+div.description h2 {
   color: white;
   font-size: 3rem;
 }
-body main div.description h2::-moz-selection {
+div.description h2::-moz-selection {
   background-color: white;
   color: black;
 }
-body main div.description h2::selection {
+div.description h2::selection {
   background-color: white;
   color: black;
 }
-body main div.description p {
+div.description p {
   color: white;
   font-size: 2rem;
 }
-body main div.description p::-moz-selection {
+div.description p::-moz-selection {
   background-color: white;
   color: black;
 }
-body main div.description p::selection {
+div.description p::selection {
   background-color: white;
   color: black;
 }
-body main div.description h3 {
+div.description h3 {
   color: white;
   font-size: 2.5rem;
 }
-body main div.description h3::-moz-selection {
+div.description h3::-moz-selection {
   background-color: white;
   color: black;
 }
-body main div.description h3::selection {
+div.description h3::selection {
   background-color: white;
   color: black;
 }/*# sourceMappingURL=style.css.map */

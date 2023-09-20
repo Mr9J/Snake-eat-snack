@@ -6,6 +6,8 @@
 
 body {
   background-color: black;
+  position: relative;
+  overflow: hidden;
   main {
     display: flex;
     flex-direction: column;
@@ -17,10 +19,6 @@ body {
     }
     #mainCanvas {
       border: 5px solid white;
-      // position: absolute;
-      // top: 60%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
     }
     #myScore,
     #highestScore {
@@ -102,35 +100,39 @@ body {
         right: 0px;
       }
     }
-    div.description {
-      max-width: 60%;
-      padding: 2rem;
-      margin-top: 2rem;
-      border: 3px solid white;
-      h2 {
-        color: white;
-        font-size: 3rem;
-        &::selection {
-          background-color: white;
-          color: black;
-        }
-      }
-      p {
-        color: white;
-        font-size: 2rem;
-        &::selection {
-          background-color: white;
-          color: black;
-        }
-      }
-      h3 {
-        color: white;
-        font-size: 2.5rem;
-        &::selection {
-          background-color: white;
-          color: black;
-        }
-      }
+  }
+}
+
+div.description {
+  position: fixed;
+  max-width: 30%;
+  padding: 2rem;
+  top: 10%;
+  margin: 1rem;
+  border: 3px solid white;
+  z-index: -1;
+  h2 {
+    color: white;
+    font-size: 3rem;
+    &::selection {
+      background-color: white;
+      color: black;
+    }
+  }
+  p {
+    color: white;
+    font-size: 2rem;
+    &::selection {
+      background-color: white;
+      color: black;
+    }
+  }
+  h3 {
+    color: white;
+    font-size: 2.5rem;
+    &::selection {
+      background-color: white;
+      color: black;
     }
   }
 }
